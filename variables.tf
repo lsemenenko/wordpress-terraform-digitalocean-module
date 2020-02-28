@@ -1,12 +1,33 @@
-variable "droplet_name" {}
-variable "droplet_region" {}
-variable "droplet_size" {}
-variable "droplet_monitoring" {}
-variable "droplet_ssh_keys" {}
+variable "droplet_name" {
+  type = string
+}
+
+variable "droplet_region" {
+  type = string
+}
+
+variable "droplet_size" {
+  type = string
+  default = "s-1vcpu-1gb"
+}
+
+variable "droplet_monitoring" {
+  default = true
+}
+
+variable "droplet_ssh_keys" {
+  type = list
+}
+
 variable "droplet_image" {
   type = string
   default = "ubuntu-18-04-x64"
 }
 
-variable "wp_fqdn" {}
-variable "wp_admin_email" {}
+variable "wp_fqdn" {
+  type = string
+}
+
+variable "wp_admin_email" {
+  type = string
+}
