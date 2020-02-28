@@ -5,11 +5,11 @@ resource "digitalocean_droplet" "droplet" {
   size = var.droplet_size
   monitoring = var.droplet_monitoring
   ssh_keys = var.droplet_ssh_keys
-  user_data = "$data.template_file.init.rendered"
+  user_data = "${data.template_file.init.rendered}"
 }
 
 data "template_file" "init" {
-  template = "${file("user-data.tpl")}"
+  template = "${file("${path.module}/user-data.tpl")}"
 
   vars = {
     fqdn = var.wp_fqdn
