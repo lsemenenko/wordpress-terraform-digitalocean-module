@@ -1,0 +1,8 @@
+*
+
+!/.gitignore
+!/main.tf
+!/output.tf
+!/variables.tf
+!/README.md
+!/user-data.tpl
