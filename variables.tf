@@ -31,3 +31,19 @@ variable "wp_fqdn" {
 variable "wp_admin_email" {
   type = string
 }
+
+variable "wp_admin_user" {
+  type = string
+}
+
+variable "wp_admin_password" {
+  type = string
+}
+
+variable "wp_version" {
+  type = string
+}
+
+variable "php_version" {
+  type = string
+}
