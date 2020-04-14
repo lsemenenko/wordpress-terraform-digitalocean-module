@@ -36,7 +36,7 @@ variable "wp_admin_user" {
   type = string
 }
 
-variable "wp_admin_password" {
+variable "wp_admin_pass" {
   type = string
 }
 
