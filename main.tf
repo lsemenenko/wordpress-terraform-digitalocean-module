@@ -14,7 +14,7 @@ data "template_file" "init" {
   vars = {
     fqdn = var.wp_fqdn
     admin_email = var.wp_admin_email
-    admin_user = var.wp_admin_email
+    admin_user = var.wp_admin_user
     admin_password = var.wp_admin_password
     wp_version = var.wp_version
     php_version = var.php_version
